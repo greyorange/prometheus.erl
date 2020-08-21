@@ -153,10 +153,10 @@ metrics(EnabledMetrics) ->
     "Total number of bytes allocated by all mnesia tables",
     fun() -> MemoryUsage end},
    {tablewise_memory_usage_bytes, gauge,
-    "Total number of bytes allocated by all mnesia tables",
+    "Number of bytes allocated per mnesia table",
     fun() -> TablewiseMemoryUsage end},
    {tablewise_size, gauge,
-    "Total number of bytes allocated by all mnesia tables",
+    "Number of rows present per table",
     fun() -> TablewiseSize end}
     ].
 
